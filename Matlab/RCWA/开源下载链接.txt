@@ -1,0 +1,2 @@
+1d RCWA: https://sourceforge.net/projects/rcwa-1d/
+2d RCWA: https://sourceforge.net/projects/rcwa-2d/files/
