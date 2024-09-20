@@ -1,10 +1,10 @@
-function pnx = lagrange_interpolation(x0s, fx0s, x)
+function Pnx = lagrange_interpolation(x0s, fx0s, x)
+    fprintf("lagrange_interpolation running.");
     xs = x0s(:);
     fxs = fx0s(:);
 
-    figure;
     hold on;
-    plot(xs, fxs, 'g', 'LineWidth', 1);
+    plot(xs, fxs, 'o', 'color', 'g', 'LineWidth', 4, 'DisplayName', 'origin data');
     
     n = length(xs);
     Li = cell(1, n);
@@ -23,5 +23,9 @@ function pnx = lagrange_interpolation(x0s, fx0s, x)
     
     plot(x, Pnx, 'r', 'LineWidth',2);
     
-    legend('origin', 'interpolation');
+    hLegend = legend('show');
+    hLegend.NumColumns = 2;
+    hLegend.Location = 'northeastoutside';
+
+    title("lagrange interpolation");
 end

@@ -1,4 +1,5 @@
 function ais = direct_interpolation(x0s, fx0s)
+    fprintf("direct_interpolation running.");
     xs = x0s(:);
     fxs = fx0s(:);
 
